@@ -1,26 +1,29 @@
-name: Generate Snake Animation
+name: Update Contribution Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # كل يوم
+    - cron: "0 0 * * *" # كل يوم الساعة 12 منتصف الليل
   workflow_dispatch:
 
 jobs:
   update-snake:
     runs-on: ubuntu-latest
     steps:
-      - name: Create output folder
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Create output folder if not exists
         run: mkdir -p ./output
 
-      - name: Download snake.svg
-        run: curl -o github-contribution-grid-snake.svg https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg
+      - name: Generate the snake animation
+        run: |
+          curl -o github-contribution-grid-snake.svg https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg
+          mv github-contribution-grid-snake.svg ./output/github-contribution-grid-snake.svg
 
-      - name: Move to output
-        run: mv github-contribution-grid-snake.svg ./output/github-contribution-grid-snake.svg
-
-      - name: Push to the output branch
-        uses: EndBug/add-and-commit@v9
-        with:
-          branch: output
-          message: "🐍 Update snake animation"
-          add: './output/github-contribution-grid-snake.svg'
+      - name: Commit and push if there are changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add ./output/github-contribution-grid-snake.svg
+          git commit -m "🐍 Update contribution snake" || echo "No changes to commit"
+          git push
