@@ -19,13 +19,13 @@ jobs:
         uses: Platane/snk@v3
         id: snake-gif
         with:
-          github_user_name: 'yossefmahmoud1'  # هنا حطيت اسم المستخدم بتاعك
+          github_user_name: 'yossefmahmoud1'  # ضع اسم المستخدم الخاص بك هنا
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BAT_PAT_TOKEN }}  # تأكد من أن BAT_PAT_TOKEN لديه صلاحيات الكتابة
 
       - name: Show build status
         run: git status
@@ -37,4 +37,4 @@ jobs:
           build_dir: dist
           commit_message: Update snake animations
         env:
-          GITHUB_TOKEN: ${{ secrets.BAT_PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BAT_PAT_TOKEN }}  # تأكد من أن الـ Token لديه صلاحيات الدفع
