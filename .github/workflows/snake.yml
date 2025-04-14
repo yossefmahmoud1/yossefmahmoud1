@@ -11,6 +11,9 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - name: Create output directory
+        run: mkdir -p output
+
       - uses: Platane/snk@v3
         with:
           github_user_name: yossefmahmoud1
