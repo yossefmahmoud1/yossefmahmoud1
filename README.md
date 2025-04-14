@@ -2,8 +2,9 @@
 
 ###
 
-<p align="left">My name is Youssef Mahmoud and I'm aReact Frontend Developer from Egypt</p>
-
+<h1 align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Youssef+Mahmoud!;" />
+</h1>
 ###
 
 <h2 align="left">About me</h2>
