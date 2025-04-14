@@ -1,0 +1,26 @@
+name: Update Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # This will run once a day at midnight (UTC)
+  push:
+    branches:
+      - main  # This will trigger on pushes to the main branch
+
+jobs:
+  update-snake:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Generate Contribution Snake
+      run: |
+        curl -o github-contribution-grid-snake.svg https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg
+        mv github-contribution-grid-snake.svg ./output/github-contribution-grid-snake.svg
+    - name: Commit & Push the generated snake
+      uses: EndBug/add-and-commit@v7
+      with:
+        message: 'Updated the contribution snake'
+        add: 'output/github-contribution-grid-snake.svg'
