@@ -2,7 +2,7 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # يعمل تحديث كل يوم الساعة 12 منتصف الليل
+    - cron: "0 0 * * *"
   push:
     branches:
       - main
