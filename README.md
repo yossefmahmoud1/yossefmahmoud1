@@ -29,7 +29,23 @@
 
 ###
 
-<p align="left">✨ Creating bugs since 2023<br>📚 React Frontend Developer & currently learning .NET for backend development<br>🎓 Computer Science student, enhancing my skills and knowledge to build stronger technical foundations<br>🎯 Goals: Become a skilled full-stack developer and build clean, scalable applications<br><br>As a React Frontend Developer with a strong foundation in web development, I am dedicated to crafting responsive and engaging user interfaces. My expertise spans across HTML, CSS, JavaScript, Bootstrap, Tailwind, Typescript, and I have hands-on experience with modern frameworks such as React.<br><br>I am committed to continuous learning and applying best practices to build scalable and high-performance web applications. My goal is to deliver intuitive and visually appealing solutions while staying current with the latest industry trends and technologies.<br><br>Skills and Competencies:<br><br>Developing and optimizing web applications<br><br>Implementing responsive designs and user-centric interfaces<br><br>Integrating APIs and leveraging JavaScript libraries<br><br>Collaborating effectively with cross-functional teams<br><br>I am eager to contribute my skills and passion to dynamic projects and opportunities. Let’s connect to explore how we can create impactful digital solutions together.</p>
+<p align="left">
+✨ Creating bugs since 2023 <br>
+💻 Full-Stack Developer (React.js & .NET) passionate about building modern, scalable web applications <br>
+🎓 Computer Science student, constantly enhancing my skills to strengthen my technical foundation <br>
+🎯 Goals: Deliver clean, maintainable code and craft impactful digital solutions <br><br>
+
+As a Full-Stack Developer specialized in <b>React.js</b> for frontend and <b>.NET</b> for backend, I build responsive, user-friendly applications with strong performance and scalability. <br><br>
+
+My expertise covers: <br>
+- Designing and implementing responsive UIs with React, Tailwind, and TypeScript <br>
+- Building robust backend services with ASP.NET Core and REST APIs <br>
+- Integrating databases, authentication, and third-party APIs <br>
+- Collaborating with cross-functional teams to deliver end-to-end solutions <br><br>
+
+I am dedicated to continuous learning and passionate about turning ideas into high-quality software. Let’s connect and create something impactful together!
+</p>
+
 
 ###
 
