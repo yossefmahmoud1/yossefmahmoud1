@@ -7,8 +7,7 @@
 </h1>
 
 
-<h3 align="center"> Full-Stack React & .NET Developer
- from Egypt</h3>
+<h3 align="center"> Full-Stack React & .NET Developer</h3>
 
 <br/>
 
