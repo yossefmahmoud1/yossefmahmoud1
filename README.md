@@ -7,7 +7,7 @@
 </h1>
 
 
-<h3 align="center"> Front-End Developer |React Js
+<h3 align="center"> Full-Stack React & .NET Developer
  from Egypt</h3>
 
 <br/>
